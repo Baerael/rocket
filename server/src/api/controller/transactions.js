@@ -19,7 +19,6 @@ export const transfer = async (req,  res) => {
             if( student_b.owes > 0 )
             continue;
             let pay = Math.min( student_a.owes, -student_b.owes );
-            // pay = parseFloat(pay.toFixed(2)) // I hate this.jpeg
             student_a.owes -= pay;
             student_a.pays.push( { to: student_b.name, amount: pay } );
             student_b.owes += pay;
