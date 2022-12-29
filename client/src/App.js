@@ -1,7 +1,9 @@
+import Tranactions from './components/Transactions'
+
 function App() {
   return (
     <div className="App">
-      init
+      <Tranactions />
     </div>
   );
 }
