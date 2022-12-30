@@ -150,9 +150,9 @@ export default function BasicTextFields() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {average.map((row) => (
+                {average.map((row, i) => (
                   <TableRow
-                    key={average.name}
+                    key={`${average.name}-${i}`}
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   >
                     <TableCell align="left">{row.name}</TableCell>
